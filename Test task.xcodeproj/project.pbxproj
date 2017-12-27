@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DB26BA11FF40249009AD520 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26B9F1FF40249009AD520 /* TabBarVC.m */; };
+		7DB26BA41FF40255009AD520 /* TranslatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA31FF40255009AD520 /* TranslatorVC.m */; };
+		7DB26BA71FF40270009AD520 /* ImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA61FF40270009AD520 /* ImageVC.m */; };
+		7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA91FF4028A009AD520 /* DesignVC.m */; };
 		7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875341FF3E87500DDC792 /* AppDelegate.m */; };
 		7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875391FF3E87500DDC792 /* Main.storyboard */; };
 		7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8753C1FF3E87500DDC792 /* Test_task.xcdatamodeld */; };
 		7DC875401FF3E87500DDC792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8753F1FF3E87500DDC792 /* Assets.xcassets */; };
 		7DC875431FF3E87500DDC792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875411FF3E87500DDC792 /* LaunchScreen.storyboard */; };
 		7DC875461FF3E87500DDC792 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875451FF3E87500DDC792 /* main.m */; };
-		7DC875511FF3FFF400DDC792 /* Image Controller in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8754F1FF3FFF300DDC792 /* Image Controller */; };
-		7DC875521FF3FFF400DDC792 /* Main Controller in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875501FF3FFF300DDC792 /* Main Controller */; };
-		7DC875541FF4000800DDC792 /* Translator Controller in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875531FF4000800DDC792 /* Translator Controller */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DB26B9F1FF40249009AD520 /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		7DB26BA01FF40249009AD520 /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		7DB26BA21FF40255009AD520 /* TranslatorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslatorVC.h; sourceTree = "<group>"; };
+		7DB26BA31FF40255009AD520 /* TranslatorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslatorVC.m; sourceTree = "<group>"; };
+		7DB26BA51FF40270009AD520 /* ImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageVC.h; sourceTree = "<group>"; };
+		7DB26BA61FF40270009AD520 /* ImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageVC.m; sourceTree = "<group>"; };
+		7DB26BA81FF4028A009AD520 /* DesignVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignVC.h; sourceTree = "<group>"; };
+		7DB26BA91FF4028A009AD520 /* DesignVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignVC.m; sourceTree = "<group>"; };
 		7DC875301FF3E87500DDC792 /* Test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC875331FF3E87500DDC792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC875341FF3E87500DDC792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,9 +37,6 @@
 		7DC875421FF3E87500DDC792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DC875441FF3E87500DDC792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC875451FF3E87500DDC792 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7DC8754F1FF3FFF300DDC792 /* Image Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Image Controller"; sourceTree = "<group>"; };
-		7DC875501FF3FFF300DDC792 /* Main Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Main Controller"; sourceTree = "<group>"; };
-		7DC875531FF4000800DDC792 /* Translator Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Translator Controller"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +71,14 @@
 			children = (
 				7DC875331FF3E87500DDC792 /* AppDelegate.h */,
 				7DC875341FF3E87500DDC792 /* AppDelegate.m */,
-				7DC875501FF3FFF300DDC792 /* Main Controller */,
-				7DC875531FF4000800DDC792 /* Translator Controller */,
-				7DC8754F1FF3FFF300DDC792 /* Image Controller */,
+				7DB26BA01FF40249009AD520 /* TabBarVC.h */,
+				7DB26B9F1FF40249009AD520 /* TabBarVC.m */,
+				7DB26BA21FF40255009AD520 /* TranslatorVC.h */,
+				7DB26BA31FF40255009AD520 /* TranslatorVC.m */,
+				7DB26BA51FF40270009AD520 /* ImageVC.h */,
+				7DB26BA61FF40270009AD520 /* ImageVC.m */,
+				7DB26BA81FF4028A009AD520 /* DesignVC.h */,
+				7DB26BA91FF4028A009AD520 /* DesignVC.m */,
 				7DC875391FF3E87500DDC792 /* Main.storyboard */,
 				7DC8753F1FF3E87500DDC792 /* Assets.xcassets */,
 				7DC875411FF3E87500DDC792 /* LaunchScreen.storyboard */,
@@ -137,11 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC875431FF3E87500DDC792 /* LaunchScreen.storyboard in Resources */,
-				7DC875541FF4000800DDC792 /* Translator Controller in Resources */,
 				7DC875401FF3E87500DDC792 /* Assets.xcassets in Resources */,
 				7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */,
-				7DC875521FF3FFF400DDC792 /* Main Controller in Resources */,
-				7DC875511FF3FFF400DDC792 /* Image Controller in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB26BA71FF40270009AD520 /* ImageVC.m in Sources */,
 				7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */,
+				7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */,
 				7DC875461FF3E87500DDC792 /* main.m in Sources */,
+				7DB26BA41FF40255009AD520 /* TranslatorVC.m in Sources */,
+				7DB26BA11FF40249009AD520 /* TabBarVC.m in Sources */,
 				7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

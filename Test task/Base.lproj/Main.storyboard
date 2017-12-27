@@ -10,17 +10,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View-->
+        <!--Image-->
         <scene sceneID="xW6-1o-XLa">
             <objects>
-                <viewController id="fWL-th-1Qj" sceneMemberID="viewController">
+                <viewController id="fWL-th-1Qj" customClass="ImageVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DvZ-y1-de4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNh-9v-ot3">
+                                <rect key="frame" x="154" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xqa-qg-k1d"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="View" id="ujl-SS-S6m"/>
+                    <tabBarItem key="tabBarItem" title="Image" id="ujl-SS-S6m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cf9-oI-NUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,18 +36,102 @@
         <!--Translator-->
         <scene sceneID="y0b-Bf-cFP">
             <objects>
-                <viewController id="Evc-Gh-xce" sceneMemberID="viewController">
+                <viewController id="Evc-Gh-xce" customClass="TranslatorVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ni0-g5-LQb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVv-Cy-pby">
+                                <rect key="frame" x="67" y="251" width="280" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Q53-q2-ZFp"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C1C-1w-CkL">
+                                <rect key="frame" x="67" y="367" width="280" height="190"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="aYk-qr-G1d"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-nv-0vx">
+                                <rect key="frame" x="17" y="262" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GkF-LC-2pe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="kh7-U4-Q6w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ukr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cR-Bj-6FD">
+                                <rect key="frame" x="17" y="367" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="2iB-Tu-SVL"/>
+                                    <constraint firstAttribute="height" constant="21" id="rm3-yd-Qm2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G50-iL-wJy">
+                                <rect key="frame" x="133" y="317" width="109" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Змінити мову"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="Evc-Gh-xce" eventType="touchUpInside" id="MMg-SJ-ebk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введіть текст: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDt-S1-T9h">
+                                <rect key="frame" x="17" y="231" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="IXB-gM-uET"/>
+                                    <constraint firstAttribute="height" constant="21" id="jsV-ck-s1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Ad-nv-0vx" firstAttribute="leading" secondItem="RUZ-NL-F6c" secondAttribute="leading" constant="17" id="5FC-DV-9n8"/>
+                            <constraint firstItem="MVv-Cy-pby" firstAttribute="leading" secondItem="2Ad-nv-0vx" secondAttribute="trailing" constant="8" id="8L8-O6-ImN"/>
+                            <constraint firstItem="RUZ-NL-F6c" firstAttribute="bottom" secondItem="C1C-1w-CkL" secondAttribute="bottom" constant="61" id="8eb-Rh-857"/>
+                            <constraint firstItem="C1C-1w-CkL" firstAttribute="top" secondItem="G50-iL-wJy" secondAttribute="bottom" constant="17" id="8f8-hk-lgD"/>
+                            <constraint firstItem="2Ad-nv-0vx" firstAttribute="top" secondItem="nDt-S1-T9h" secondAttribute="bottom" constant="10" id="DqY-N2-zwE"/>
+                            <constraint firstItem="nDt-S1-T9h" firstAttribute="leading" secondItem="2Ad-nv-0vx" secondAttribute="leading" id="E8x-7B-A7p"/>
+                            <constraint firstItem="C1C-1w-CkL" firstAttribute="top" secondItem="7cR-Bj-6FD" secondAttribute="top" id="Oq1-eK-o2q"/>
+                            <constraint firstItem="RUZ-NL-F6c" firstAttribute="trailing" secondItem="MVv-Cy-pby" secondAttribute="trailing" constant="28" id="RsE-ve-AoP"/>
+                            <constraint firstItem="7cR-Bj-6FD" firstAttribute="leading" secondItem="RUZ-NL-F6c" secondAttribute="leading" constant="17" id="Tpc-MX-8BN"/>
+                            <constraint firstItem="nDt-S1-T9h" firstAttribute="top" secondItem="RUZ-NL-F6c" secondAttribute="top" constant="211" id="VyD-JM-MRu"/>
+                            <constraint firstItem="G50-iL-wJy" firstAttribute="centerY" secondItem="Ni0-g5-LQb" secondAttribute="centerY" id="ZIx-Tr-wTd"/>
+                            <constraint firstItem="C1C-1w-CkL" firstAttribute="trailing" secondItem="MVv-Cy-pby" secondAttribute="trailing" id="btf-ci-2ft"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nDt-S1-T9h" secondAttribute="trailing" constant="20" symbolic="YES" id="c53-kb-5K5"/>
+                            <constraint firstItem="G50-iL-wJy" firstAttribute="centerX" secondItem="Ni0-g5-LQb" secondAttribute="centerX" id="lBb-Ts-hzX"/>
+                            <constraint firstItem="C1C-1w-CkL" firstAttribute="leading" secondItem="7cR-Bj-6FD" secondAttribute="trailing" constant="8" id="wmG-dk-6UR"/>
+                            <constraint firstItem="G50-iL-wJy" firstAttribute="top" secondItem="MVv-Cy-pby" secondAttribute="bottom" constant="23" id="xCM-9n-B8l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RUZ-NL-F6c"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Translator" id="dg2-wJ-Lwc"/>
+                    <connections>
+                        <outlet property="firstLanguageLabel" destination="2Ad-nv-0vx" id="JOc-Lo-qnf"/>
+                        <outlet property="firstTextView" destination="MVv-Cy-pby" id="8pZ-hG-Lec"/>
+                        <outlet property="secondLanguageLabel" destination="7cR-Bj-6FD" id="ZkJ-ad-ehC"/>
+                        <outlet property="secondTextView" destination="C1C-1w-CkL" id="ask-D7-J7X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLx-sy-S9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="-43"/>
+            <point key="canvasLocation" x="24.800000000000001" y="-43.628185907046479"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="zVF-Z0-dAd">
