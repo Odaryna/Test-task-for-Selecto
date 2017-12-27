@@ -11,6 +11,8 @@
 		7DB26BA41FF40255009AD520 /* TranslatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA31FF40255009AD520 /* TranslatorVC.m */; };
 		7DB26BA71FF40270009AD520 /* ImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA61FF40270009AD520 /* ImageVC.m */; };
 		7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA91FF4028A009AD520 /* DesignVC.m */; };
+		7DB26BB31FF43844009AD520 /* ImageCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BB11FF43844009AD520 /* ImageCVCell.m */; };
+		7DB26BB41FF43844009AD520 /* ImageCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB26BB21FF43844009AD520 /* ImageCVCell.xib */; };
 		7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875341FF3E87500DDC792 /* AppDelegate.m */; };
 		7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875391FF3E87500DDC792 /* Main.storyboard */; };
 		7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8753C1FF3E87500DDC792 /* Test_task.xcdatamodeld */; };
@@ -28,6 +30,9 @@
 		7DB26BA61FF40270009AD520 /* ImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageVC.m; sourceTree = "<group>"; };
 		7DB26BA81FF4028A009AD520 /* DesignVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignVC.h; sourceTree = "<group>"; };
 		7DB26BA91FF4028A009AD520 /* DesignVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignVC.m; sourceTree = "<group>"; };
+		7DB26BB01FF43844009AD520 /* ImageCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCVCell.h; sourceTree = "<group>"; };
+		7DB26BB11FF43844009AD520 /* ImageCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCVCell.m; sourceTree = "<group>"; };
+		7DB26BB21FF43844009AD520 /* ImageCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCVCell.xib; sourceTree = "<group>"; };
 		7DC875301FF3E87500DDC792 /* Test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC875331FF3E87500DDC792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC875341FF3E87500DDC792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +55,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DB26BAB1FF43790009AD520 /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BA01FF40249009AD520 /* TabBarVC.h */,
+				7DB26B9F1FF40249009AD520 /* TabBarVC.m */,
+			);
+			path = "Main Controller";
+			sourceTree = "<group>";
+		};
+		7DB26BAC1FF437A9009AD520 /* Image Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BA51FF40270009AD520 /* ImageVC.h */,
+				7DB26BA61FF40270009AD520 /* ImageVC.m */,
+				7DB26BAF1FF43809009AD520 /* Image CollectionViewCell */,
+			);
+			path = "Image Controller";
+			sourceTree = "<group>";
+		};
+		7DB26BAD1FF437B4009AD520 /* Translator controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BA21FF40255009AD520 /* TranslatorVC.h */,
+				7DB26BA31FF40255009AD520 /* TranslatorVC.m */,
+			);
+			path = "Translator controller";
+			sourceTree = "<group>";
+		};
+		7DB26BAE1FF437DE009AD520 /* Design Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BA81FF4028A009AD520 /* DesignVC.h */,
+				7DB26BA91FF4028A009AD520 /* DesignVC.m */,
+			);
+			path = "Design Controller";
+			sourceTree = "<group>";
+		};
+		7DB26BAF1FF43809009AD520 /* Image CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BB01FF43844009AD520 /* ImageCVCell.h */,
+				7DB26BB11FF43844009AD520 /* ImageCVCell.m */,
+				7DB26BB21FF43844009AD520 /* ImageCVCell.xib */,
+			);
+			path = "Image CollectionViewCell";
+			sourceTree = "<group>";
+		};
 		7DC875271FF3E87500DDC792 = {
 			isa = PBXGroup;
 			children = (
@@ -71,14 +123,10 @@
 			children = (
 				7DC875331FF3E87500DDC792 /* AppDelegate.h */,
 				7DC875341FF3E87500DDC792 /* AppDelegate.m */,
-				7DB26BA01FF40249009AD520 /* TabBarVC.h */,
-				7DB26B9F1FF40249009AD520 /* TabBarVC.m */,
-				7DB26BA21FF40255009AD520 /* TranslatorVC.h */,
-				7DB26BA31FF40255009AD520 /* TranslatorVC.m */,
-				7DB26BA51FF40270009AD520 /* ImageVC.h */,
-				7DB26BA61FF40270009AD520 /* ImageVC.m */,
-				7DB26BA81FF4028A009AD520 /* DesignVC.h */,
-				7DB26BA91FF4028A009AD520 /* DesignVC.m */,
+				7DB26BAB1FF43790009AD520 /* Main Controller */,
+				7DB26BAD1FF437B4009AD520 /* Translator controller */,
+				7DB26BAC1FF437A9009AD520 /* Image Controller */,
+				7DB26BAE1FF437DE009AD520 /* Design Controller */,
 				7DC875391FF3E87500DDC792 /* Main.storyboard */,
 				7DC8753F1FF3E87500DDC792 /* Assets.xcassets */,
 				7DC875411FF3E87500DDC792 /* LaunchScreen.storyboard */,
@@ -147,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB26BB41FF43844009AD520 /* ImageCVCell.xib in Resources */,
 				7DC875431FF3E87500DDC792 /* LaunchScreen.storyboard in Resources */,
 				7DC875401FF3E87500DDC792 /* Assets.xcassets in Resources */,
 				7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */,
@@ -164,6 +213,7 @@
 				7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */,
 				7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */,
 				7DC875461FF3E87500DDC792 /* main.m in Sources */,
+				7DB26BB31FF43844009AD520 /* ImageCVCell.m in Sources */,
 				7DB26BA41FF40255009AD520 /* TranslatorVC.m in Sources */,
 				7DB26BA11FF40249009AD520 /* TabBarVC.m in Sources */,
 				7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */,

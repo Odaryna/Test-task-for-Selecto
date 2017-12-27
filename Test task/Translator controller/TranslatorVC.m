@@ -8,7 +8,7 @@
 
 #import "TranslatorVC.h"
 
-@interface TranslatorVC () {
+@interface TranslatorVC () <UITextViewDelegate> {
     BOOL _translationFromUkrainian;
 }
 
@@ -36,7 +36,24 @@
     [self changeDataLabels];
 }
 
+#pragma mark - UITextView delegate
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        [self translate];
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
 #pragma mark - private methods
+
+- (void)translate {
+    self.secondTextView.text = @"Translated";
+}
+
 - (void)changeDataLabels {
     
     NSString *textFromFirstTextView = @"";
