@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define IMAGE_CV_CELL_IDENTIFIER @"ImageCVCell"
+
 @interface ImageCVCell : UICollectionViewCell
 
 @end

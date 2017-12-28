@@ -9,7 +9,7 @@
 #import "ImageVC.h"
 #import "ImageCVCell.h"
 
-@interface ImageVC () <UICollectionViewDelegate>
+@interface ImageVC () <UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *gifCollectionView;
 
@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    [self.gifCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ImageCVCell class]) bundle:nil] forCellWithReuseIdentifier:@"ImageCVCell"];
+    [self.gifCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ImageCVCell class]) bundle:nil] forCellWithReuseIdentifier:IMAGE_CV_CELL_IDENTIFIER];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
@@ -39,19 +39,16 @@
     return 5.0;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 9;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    ImageCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCVCell" forIndexPath:indexPath];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ImageCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IMAGE_CV_CELL_IDENTIFIER forIndexPath:indexPath];
     return cell;
 }
 
