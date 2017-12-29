@@ -28,9 +28,9 @@ NSString *const savedTranslatedWords = @"savedTranslatedWords";
 
 + (NSDictionary *)setWordsForTranslations {
     
-    NSArray *englishWords = @[@"do", @"make", @"insist on", @"realise", @"decide", @"fear", @"can", @"have", @"have to", @"love", @"like"];
+    NSArray *englishWords = @[@"do", @"make", @"realise", @"decide", @"fear", @"can", @"have", @"have to", @"love", @"like", @"job", @"maker", @"kiss", @"dig"];
     
-    NSArray *ukranianWords = @[@"робити", @"робити", @"наполягати на", @"зрозуміти", @"вирішити", @"боятись", @"могти", @"мати", @"мусити", @"любити", @"подобатись"];
+    NSArray *ukranianWords = @[@"робити", @"робити", @"зрозуміти", @"вирішити", @"боятись", @"могти", @"мати", @"мусити", @"любити", @"подобатись", @"робота", @"виробник", @"цілувати", @"копати"];
     
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     

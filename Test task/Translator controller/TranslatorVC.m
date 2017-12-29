@@ -75,11 +75,36 @@
 - (void)translate {
     
     NSString *textToTranslate = [self.firstTextField.text lowercaseString];
-    self.secondTextField.text = _translationFromUkrainian ? [[_translatedDictionary allKeysForObject:textToTranslate] objectAtIndex:0] : [_translatedDictionary objectForKey:textToTranslate];
+    
+    if (_translationFromUkrainian) {
+        
+        NSString *text = [_translatedDictionary allKeysForObject:textToTranslate].count > 0 ? [[_translatedDictionary allKeysForObject:textToTranslate] objectAtIndex:0] : nil;
+        self.secondTextField.text = text;
+    } else {
+        self.secondTextField.text = [_translatedDictionary objectForKey:textToTranslate];
+    }
     
     if (self.secondTextField.text.length > 0) {
         
         [[CoreDataManager sharedManager] saveTranslation:[ [TranslationModel alloc] initWithEnglishText:[self englishText] ukrainianText:[self ukrainianText] fromEnglish:!_translationFromUkrainian]];
+    } else {
+        UIAlertController * alert =  [UIAlertController
+                                      alertControllerWithTitle:@"Такого слова не існує!"
+                                      message:nil
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 //Do some thing here
+                                 [alert dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+        [alert addAction:ok];
     }
 }
 
