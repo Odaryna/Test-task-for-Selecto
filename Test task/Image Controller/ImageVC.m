@@ -8,6 +8,17 @@
 
 #import "ImageVC.h"
 #import "ImageCVCell.h"
+#import "UIImage+animatedGIF.h"
+
+dispatch_queue_t backgroundQueue() {
+    static dispatch_once_t queueCreationGuard;
+    static dispatch_queue_t queue;
+    dispatch_once(&queueCreationGuard, ^{
+        queue = dispatch_queue_create("com.test_task.GIF.backgroundQueue", 0);
+    });
+    return queue;
+}
+
 
 @interface ImageVC () <UICollectionViewDataSource>
 
@@ -49,6 +60,16 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImageCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IMAGE_CV_CELL_IDENTIFIER forIndexPath:indexPath];
+
+    dispatch_async(backgroundQueue(), ^{
+        
+        UIImage *animatedGIFImage = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/c/c0/An_example_animation_made_with_Pivot.gif"]];
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [cell setImage:animatedGIFImage];
+        });
+    });
+
     return cell;
 }
 

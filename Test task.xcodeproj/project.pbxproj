@@ -13,6 +13,13 @@
 		7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BA91FF4028A009AD520 /* DesignVC.m */; };
 		7DB26BB31FF43844009AD520 /* ImageCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BB11FF43844009AD520 /* ImageCVCell.m */; };
 		7DB26BB41FF43844009AD520 /* ImageCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB26BB21FF43844009AD520 /* ImageCVCell.xib */; };
+		7DB26BB91FF5B683009AD520 /* ImageWithLabelCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BB71FF5B683009AD520 /* ImageWithLabelCVCell.m */; };
+		7DB26BBA1FF5B683009AD520 /* ImageWithLabelCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB26BB81FF5B683009AD520 /* ImageWithLabelCVCell.xib */; };
+		7DB26BBE1FF5B817009AD520 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BBC1FF5B817009AD520 /* UIImage+animatedGIF.m */; };
+		7DB26BC41FF5C07A009AD520 /* TranslatedText+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC21FF5C07A009AD520 /* TranslatedText+CoreDataClass.m */; };
+		7DB26BC51FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC31FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m */; };
+		7DB26BC81FF5C0C7009AD520 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */; };
+		7DB26BCD1FF5C221009AD520 /* TranslationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BCC1FF5C221009AD520 /* TranslationModel.m */; };
 		7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875341FF3E87500DDC792 /* AppDelegate.m */; };
 		7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875391FF3E87500DDC792 /* Main.storyboard */; };
 		7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8753C1FF3E87500DDC792 /* Test_task.xcdatamodeld */; };
@@ -33,6 +40,19 @@
 		7DB26BB01FF43844009AD520 /* ImageCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCVCell.h; sourceTree = "<group>"; };
 		7DB26BB11FF43844009AD520 /* ImageCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCVCell.m; sourceTree = "<group>"; };
 		7DB26BB21FF43844009AD520 /* ImageCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCVCell.xib; sourceTree = "<group>"; };
+		7DB26BB61FF5B683009AD520 /* ImageWithLabelCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageWithLabelCVCell.h; sourceTree = "<group>"; };
+		7DB26BB71FF5B683009AD520 /* ImageWithLabelCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageWithLabelCVCell.m; sourceTree = "<group>"; };
+		7DB26BB81FF5B683009AD520 /* ImageWithLabelCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageWithLabelCVCell.xib; sourceTree = "<group>"; };
+		7DB26BBC1FF5B817009AD520 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		7DB26BBD1FF5B817009AD520 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		7DB26BC01FF5C07A009AD520 /* TranslatedText+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TranslatedText+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7DB26BC11FF5C07A009AD520 /* TranslatedText+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TranslatedText+CoreDataClass.h"; sourceTree = "<group>"; };
+		7DB26BC21FF5C07A009AD520 /* TranslatedText+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TranslatedText+CoreDataClass.m"; sourceTree = "<group>"; };
+		7DB26BC31FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TranslatedText+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7DB26BC61FF5C0C7009AD520 /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		7DB26BCB1FF5C221009AD520 /* TranslationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslationModel.h; sourceTree = "<group>"; };
+		7DB26BCC1FF5C221009AD520 /* TranslationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationModel.m; sourceTree = "<group>"; };
 		7DC875301FF3E87500DDC792 /* Test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC875331FF3E87500DDC792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC875341FF3E87500DDC792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,8 +126,42 @@
 		7DB26BB51FF5B5D8009AD520 /* ImageWithLabel CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				7DB26BB61FF5B683009AD520 /* ImageWithLabelCVCell.h */,
+				7DB26BB71FF5B683009AD520 /* ImageWithLabelCVCell.m */,
+				7DB26BB81FF5B683009AD520 /* ImageWithLabelCVCell.xib */,
 			);
 			path = "ImageWithLabel CollectionViewCell";
+			sourceTree = "<group>";
+		};
+		7DB26BBB1FF5B7F5009AD520 /* UIImage+animatedGIF */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BBD1FF5B817009AD520 /* UIImage+animatedGIF.h */,
+				7DB26BBC1FF5B817009AD520 /* UIImage+animatedGIF.m */,
+			);
+			path = "UIImage+animatedGIF";
+			sourceTree = "<group>";
+		};
+		7DB26BBF1FF5C058009AD520 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BC01FF5C07A009AD520 /* TranslatedText+CoreDataProperties.h */,
+				7DB26BC11FF5C07A009AD520 /* TranslatedText+CoreDataClass.h */,
+				7DB26BC21FF5C07A009AD520 /* TranslatedText+CoreDataClass.m */,
+				7DB26BC31FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m */,
+				7DB26BC61FF5C0C7009AD520 /* CoreDataManager.h */,
+				7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		7DB26BCA1FF5C1F3009AD520 /* TranslationModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BCB1FF5C221009AD520 /* TranslationModel.h */,
+				7DB26BCC1FF5C221009AD520 /* TranslationModel.m */,
+			);
+			path = TranslationModel;
 			sourceTree = "<group>";
 		};
 		7DC875271FF3E87500DDC792 = {
@@ -129,6 +183,9 @@
 		7DC875321FF3E87500DDC792 /* Test task */ = {
 			isa = PBXGroup;
 			children = (
+				7DB26BCA1FF5C1F3009AD520 /* TranslationModel */,
+				7DB26BBF1FF5C058009AD520 /* Core Data */,
+				7DB26BBB1FF5B7F5009AD520 /* UIImage+animatedGIF */,
 				7DC875331FF3E87500DDC792 /* AppDelegate.h */,
 				7DC875341FF3E87500DDC792 /* AppDelegate.m */,
 				7DB26BAB1FF43790009AD520 /* Main Controller */,
@@ -205,6 +262,7 @@
 			files = (
 				7DB26BB41FF43844009AD520 /* ImageCVCell.xib in Resources */,
 				7DC875431FF3E87500DDC792 /* LaunchScreen.storyboard in Resources */,
+				7DB26BBA1FF5B683009AD520 /* ImageWithLabelCVCell.xib in Resources */,
 				7DC875401FF3E87500DDC792 /* Assets.xcassets in Resources */,
 				7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */,
 			);
@@ -218,7 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DB26BA71FF40270009AD520 /* ImageVC.m in Sources */,
+				7DB26BC81FF5C0C7009AD520 /* CoreDataManager.m in Sources */,
+				7DB26BB91FF5B683009AD520 /* ImageWithLabelCVCell.m in Sources */,
+				7DB26BCD1FF5C221009AD520 /* TranslationModel.m in Sources */,
+				7DB26BC41FF5C07A009AD520 /* TranslatedText+CoreDataClass.m in Sources */,
 				7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */,
+				7DB26BC51FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m in Sources */,
+				7DB26BBE1FF5B817009AD520 /* UIImage+animatedGIF.m in Sources */,
 				7DB26BAA1FF4028A009AD520 /* DesignVC.m in Sources */,
 				7DC875461FF3E87500DDC792 /* main.m in Sources */,
 				7DB26BB31FF43844009AD520 /* ImageCVCell.m in Sources */,

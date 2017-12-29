@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="TranslatedText" representedClassName="TranslatedText" syncable="YES">
+        <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from_english" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ukrainian" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TranslatedText" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
 </model>

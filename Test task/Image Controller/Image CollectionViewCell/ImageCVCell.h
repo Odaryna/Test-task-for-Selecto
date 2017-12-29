@@ -12,4 +12,6 @@
 
 @interface ImageCVCell : UICollectionViewCell
 
+- (void)setImage:(UIImage *)image;
+
 @end

@@ -16,9 +16,7 @@
 
 @implementation ImageCVCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setImage:(UIImage *)image {
+    self.gifImageView.image = image;
 }
-
 @end
