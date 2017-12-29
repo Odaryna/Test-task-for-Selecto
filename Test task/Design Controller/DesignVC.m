@@ -44,7 +44,7 @@
     
     [self.photosCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ImageCVCell class]) bundle:nil] forCellWithReuseIdentifier:IMAGE_CV_CELL_IDENTIFIER];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.001f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         self.photoImageView.layer.cornerRadius = self.photoImageView.bounds.size.height / 2;
         self.followBtn.layer.cornerRadius = self.followBtn.bounds.size.height / 2;
