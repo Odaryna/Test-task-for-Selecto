@@ -14,4 +14,6 @@
 @property (nonatomic, copy) NSString *ukrainianText;
 @property (nonatomic, assign) BOOL fromEnglish;
 
+- (instancetype)initWithEnglishText:(NSString *)eText ukrainianText:(NSString *)uText fromEnglish:(BOOL)fromE;
+
 @end

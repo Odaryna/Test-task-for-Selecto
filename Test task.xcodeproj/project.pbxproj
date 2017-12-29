@@ -20,6 +20,7 @@
 		7DB26BC51FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC31FF5C07A009AD520 /* TranslatedText+CoreDataProperties.m */; };
 		7DB26BC81FF5C0C7009AD520 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */; };
 		7DB26BCD1FF5C221009AD520 /* TranslationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BCC1FF5C221009AD520 /* TranslationModel.m */; };
+		7DB26BD11FF6465E009AD520 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BD01FF6465E009AD520 /* UserDefaultsManager.m */; };
 		7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875341FF3E87500DDC792 /* AppDelegate.m */; };
 		7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875391FF3E87500DDC792 /* Main.storyboard */; };
 		7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8753C1FF3E87500DDC792 /* Test_task.xcdatamodeld */; };
@@ -53,6 +54,8 @@
 		7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		7DB26BCB1FF5C221009AD520 /* TranslationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslationModel.h; sourceTree = "<group>"; };
 		7DB26BCC1FF5C221009AD520 /* TranslationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationModel.m; sourceTree = "<group>"; };
+		7DB26BCF1FF6465E009AD520 /* UserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		7DB26BD01FF6465E009AD520 /* UserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
 		7DC875301FF3E87500DDC792 /* Test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC875331FF3E87500DDC792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC875341FF3E87500DDC792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -164,6 +167,15 @@
 			path = TranslationModel;
 			sourceTree = "<group>";
 		};
+		7DB26BCE1FF64638009AD520 /* UserDefaults manager */ = {
+			isa = PBXGroup;
+			children = (
+				7DB26BCF1FF6465E009AD520 /* UserDefaultsManager.h */,
+				7DB26BD01FF6465E009AD520 /* UserDefaultsManager.m */,
+			);
+			path = "UserDefaults manager";
+			sourceTree = "<group>";
+		};
 		7DC875271FF3E87500DDC792 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +195,7 @@
 		7DC875321FF3E87500DDC792 /* Test task */ = {
 			isa = PBXGroup;
 			children = (
+				7DB26BCE1FF64638009AD520 /* UserDefaults manager */,
 				7DB26BCA1FF5C1F3009AD520 /* TranslationModel */,
 				7DB26BBF1FF5C058009AD520 /* Core Data */,
 				7DB26BBB1FF5B7F5009AD520 /* UIImage+animatedGIF */,
@@ -277,6 +290,7 @@
 			files = (
 				7DB26BA71FF40270009AD520 /* ImageVC.m in Sources */,
 				7DB26BC81FF5C0C7009AD520 /* CoreDataManager.m in Sources */,
+				7DB26BD11FF6465E009AD520 /* UserDefaultsManager.m in Sources */,
 				7DB26BB91FF5B683009AD520 /* ImageWithLabelCVCell.m in Sources */,
 				7DB26BCD1FF5C221009AD520 /* TranslationModel.m in Sources */,
 				7DB26BC41FF5C07A009AD520 /* TranslatedText+CoreDataClass.m in Sources */,

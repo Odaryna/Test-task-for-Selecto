@@ -7,17 +7,21 @@
 //
 
 #import "TranslatorVC.h"
+#import "CoreDataManager.h"
+#import "UserDefaultsManager.h"
 
-@interface TranslatorVC () <UITextViewDelegate> {
+@interface TranslatorVC () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource> {
     BOOL _translationFromUkrainian;
+    NSDictionary *_translatedDictionary;
 }
 
-@property (weak, nonatomic) IBOutlet UITextView *firstTextView;
-@property (weak, nonatomic) IBOutlet UITextView *secondTextView;
+@property (weak, nonatomic) IBOutlet UITextField *firstTextField;
+@property (weak, nonatomic) IBOutlet UITextField *secondTextField;
 @property (weak, nonatomic) IBOutlet UILabel *firstLanguageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondLanguageLabel;
 
 - (IBAction)changeLanguage:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITableView *historyTableView;
 
 @end
 
@@ -26,8 +30,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.firstTextView.text = @"";
-    self.secondTextView.text = @"";
+    self.firstTextField.text = @"";
+    self.secondTextField.text = @"";
+    
+    _translatedDictionary = [UserDefaultsManager translatedWords];
 }
 
 - (IBAction)changeLanguage:(UIButton *)sender {
@@ -38,28 +44,26 @@
 
 #pragma mark - UITextView delegate
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
-    if ([text isEqualToString:@"\n"]) {
-        [self translate];
-        [textView resignFirstResponder];
-        return NO;
-    }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
+    [self translate];
+    [textField resignFirstResponder];
     return YES;
 }
 
 #pragma mark - private methods
 
 - (void)translate {
-    self.secondTextView.text = @"Translated";
+    self.secondTextField.text = _translationFromUkrainian ? [[_translatedDictionary allKeysForObject:self.firstTextField.text] objectAtIndex:0] : [_translatedDictionary objectForKey:self.firstTextField.text];
+    [[CoreDataManager sharedManager] saveTranslation:[ [TranslationModel alloc] initWithEnglishText:[self englishText] ukrainianText:[self ukrainianText] fromEnglish:_translationFromUkrainian]];
 }
 
 - (void)changeDataLabels {
     
     NSString *textFromFirstTextView = @"";
-    textFromFirstTextView = self.firstTextView.text;
-    self.firstTextView.text = self.secondTextView.text;
-    self.secondTextView.text = textFromFirstTextView;
+    textFromFirstTextView = self.firstTextField.text;
+    self.firstTextField.text = self.secondTextField.text;
+    self.secondTextField.text = textFromFirstTextView;
     
     if (_translationFromUkrainian) {
         
@@ -70,5 +74,25 @@
         self.secondLanguageLabel.text = @"UKR";
     }
 }
+
+- (NSString *)englishText {
+    return _translationFromUkrainian ? self.secondTextField.text : self.firstTextField.text;
+}
+
+- (NSString *)ukrainianText {
+    return _translationFromUkrainian ? self.firstTextField.text : self.secondTextField.text;
+}
+
+//- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+//    
+//    
+//}
+//
+//- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    
+//    return 0;
+//}
+
+
 
 @end

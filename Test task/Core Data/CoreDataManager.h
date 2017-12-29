@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "TranslationModel.h"
 
 @interface CoreDataManager : NSObject
 
@@ -16,5 +17,8 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
+
+- (void)saveTranslation:(TranslationModel *)model;
+- (NSArray<TranslationModel *> *)getAllTranslations;
 
 @end

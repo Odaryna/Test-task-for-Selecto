@@ -10,4 +10,13 @@
 
 @implementation TranslationModel
 
+- (instancetype)initWithEnglishText:(NSString *)eText ukrainianText:(NSString *)uText fromEnglish:(BOOL)fromE {
+    if (self = [super init]) {
+        _englishText = eText;
+        _ukrainianText = uText;
+        _fromEnglish = fromE;
+    }
+    return self;
+}
+
 @end

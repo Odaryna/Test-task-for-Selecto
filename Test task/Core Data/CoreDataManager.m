@@ -7,6 +7,7 @@
 //
 
 #import "CoreDataManager.h"
+#import "TranslatedText+CoreDataProperties.h"
 
 @implementation CoreDataManager
 
@@ -64,8 +65,31 @@
 
 #pragma mark - public methods
 
-- (void)saveTranslation:(NSString *)englishText ukrainianText:(NSString *)ukrainianText fromEnglish:(BOOL)fromEnglish {
+- (void)saveTranslation:(TranslationModel *)model {
     
+    TranslatedText *dbTranslatedText = [NSEntityDescription insertNewObjectForEntityForName:@"TranslatedText" inManagedObjectContext:[self persistentContainer].viewContext];
+    [dbTranslatedText setEnglish:model.englishText];
+    [dbTranslatedText setUkrainian:model.ukrainianText];
+    [dbTranslatedText setFrom_english:model.fromEnglish];
+    
+    [self saveContext];
+}
+
+- (NSArray<TranslationModel *> *)getAllTranslations {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"TranslatedText"];
+    NSError *error = nil;
+    NSArray *results = [[self persistentContainer].viewContext executeFetchRequest:request error:&error];
+    if (!results) {
+        NSLog(@"Error fetching Employee objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        return nil;
+    }
+    
+    NSMutableArray *translations = [NSMutableArray new];
+    for (TranslatedText *dbText in results) {
+        [translations addObject:[[TranslationModel alloc] initWithEnglishText:dbText.english ukrainianText:dbText.ukrainian fromEnglish:dbText.from_english]];
+    }
+    
+    return [results copy];
 }
 
 @end
