@@ -89,7 +89,7 @@
         [translations addObject:[[TranslationModel alloc] initWithEnglishText:dbText.english ukrainianText:dbText.ukrainian fromEnglish:dbText.from_english]];
     }
     
-    return [results copy];
+    return [translations copy];
 }
 
 @end
