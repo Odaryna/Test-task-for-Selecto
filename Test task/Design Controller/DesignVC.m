@@ -9,6 +9,9 @@
 #import "DesignVC.h"
 #import "ImageCVCell.h"
 
+#define BTNS_COLOR [UIColor colorWithRed:94.0f/255.f green:179.0f/255.f blue:188.0f/255.f alpha:1.0f]
+#define PlACEHOLDER_COLOR [UIColor colorWithRed:94.0f/255.f green:179.0f/255.f blue:188.0f/255.f alpha:0.1f]
+
 @interface DesignVC () <UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
@@ -31,25 +34,22 @@
     self.photoImageView.layer.borderWidth = 1.f;
     self.photoImageView.layer.masksToBounds = YES;
     
-    [self.followBtn setBackgroundColor:[UIColor colorWithRed:94.0f/255.f green:179.0f/255.f blue:188.0f/255.f alpha:1.0f]];
+    [self.followBtn setBackgroundColor:BTNS_COLOR];
     
-    self.shareButton.layer.borderColor = [UIColor colorWithRed:94.0f/255.f green:179.0f/255.f blue:188.0f/255.f alpha:1.0f].CGColor;
+    self.shareButton.layer.borderColor = BTNS_COLOR.CGColor;
     self.shareButton.layer.borderWidth = 2.f;
     self.shareButton.layer.masksToBounds = YES;
     
-    [self.placeholderView setBackgroundColor:[UIColor colorWithRed:94.0f/255.f green:179.0f/255.f blue:188.0f/255.f alpha:0.1f]];
+    [self.placeholderView setBackgroundColor:PlACEHOLDER_COLOR];
     
     [self.photosCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ImageCVCell class]) bundle:nil] forCellWithReuseIdentifier:IMAGE_CV_CELL_IDENTIFIER];
-}
-
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
     
-    self.photoImageView.layer.cornerRadius = self.photoImageView.bounds.size.height / 2;
-    self.followBtn.layer.cornerRadius = self.followBtn.bounds.size.height / 2;
-    self.shareButton.layer.cornerRadius = self.followBtn.bounds.size.height / 2;
-    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        self.photoImageView.layer.cornerRadius = self.photoImageView.bounds.size.height / 2;
+        self.followBtn.layer.cornerRadius = self.followBtn.bounds.size.height / 2;
+        self.shareButton.layer.cornerRadius = self.followBtn.bounds.size.height / 2;
+    });
 }
 
 #pragma mark - UICollectionView datasource

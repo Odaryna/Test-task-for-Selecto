@@ -21,6 +21,7 @@
 		7DB26BC81FF5C0C7009AD520 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BC71FF5C0C7009AD520 /* CoreDataManager.m */; };
 		7DB26BCD1FF5C221009AD520 /* TranslationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BCC1FF5C221009AD520 /* TranslationModel.m */; };
 		7DB26BD11FF6465E009AD520 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB26BD01FF6465E009AD520 /* UserDefaultsManager.m */; };
+		7DB26BD31FF66093009AD520 /* EERoundedButton in Resources */ = {isa = PBXBuildFile; fileRef = 7DB26BD21FF66093009AD520 /* EERoundedButton */; };
 		7DC875351FF3E87500DDC792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC875341FF3E87500DDC792 /* AppDelegate.m */; };
 		7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC875391FF3E87500DDC792 /* Main.storyboard */; };
 		7DC8753E1FF3E87500DDC792 /* Test_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8753C1FF3E87500DDC792 /* Test_task.xcdatamodeld */; };
@@ -56,6 +57,7 @@
 		7DB26BCC1FF5C221009AD520 /* TranslationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationModel.m; sourceTree = "<group>"; };
 		7DB26BCF1FF6465E009AD520 /* UserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
 		7DB26BD01FF6465E009AD520 /* UserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
+		7DB26BD21FF66093009AD520 /* EERoundedButton */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EERoundedButton; sourceTree = "<group>"; };
 		7DC875301FF3E87500DDC792 /* Test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC875331FF3E87500DDC792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC875341FF3E87500DDC792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		7DC875321FF3E87500DDC792 /* Test task */ = {
 			isa = PBXGroup;
 			children = (
+				7DB26BD21FF66093009AD520 /* EERoundedButton */,
 				7DB26BCE1FF64638009AD520 /* UserDefaults manager */,
 				7DB26BCA1FF5C1F3009AD520 /* TranslationModel */,
 				7DB26BBF1FF5C058009AD520 /* Core Data */,
@@ -277,6 +280,7 @@
 				7DC875431FF3E87500DDC792 /* LaunchScreen.storyboard in Resources */,
 				7DB26BBA1FF5B683009AD520 /* ImageWithLabelCVCell.xib in Resources */,
 				7DC875401FF3E87500DDC792 /* Assets.xcassets in Resources */,
+				7DB26BD31FF66093009AD520 /* EERoundedButton in Resources */,
 				7DC8753B1FF3E87500DDC792 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
