@@ -197,17 +197,17 @@
 		7DC875321FF3E87500DDC792 /* Test task */ = {
 			isa = PBXGroup;
 			children = (
-				7DB26BD21FF66093009AD520 /* EERoundedButton */,
-				7DB26BCE1FF64638009AD520 /* UserDefaults manager */,
-				7DB26BCA1FF5C1F3009AD520 /* TranslationModel */,
-				7DB26BBF1FF5C058009AD520 /* Core Data */,
-				7DB26BBB1FF5B7F5009AD520 /* UIImage+animatedGIF */,
 				7DC875331FF3E87500DDC792 /* AppDelegate.h */,
 				7DC875341FF3E87500DDC792 /* AppDelegate.m */,
 				7DB26BAB1FF43790009AD520 /* Main Controller */,
 				7DB26BAD1FF437B4009AD520 /* Translator controller */,
 				7DB26BAC1FF437A9009AD520 /* Image Controller */,
 				7DB26BAE1FF437DE009AD520 /* Design Controller */,
+				7DB26BD21FF66093009AD520 /* EERoundedButton */,
+				7DB26BCE1FF64638009AD520 /* UserDefaults manager */,
+				7DB26BCA1FF5C1F3009AD520 /* TranslationModel */,
+				7DB26BBF1FF5C058009AD520 /* Core Data */,
+				7DB26BBB1FF5B7F5009AD520 /* UIImage+animatedGIF */,
 				7DC875391FF3E87500DDC792 /* Main.storyboard */,
 				7DC8753F1FF3E87500DDC792 /* Assets.xcassets */,
 				7DC875411FF3E87500DDC792 /* LaunchScreen.storyboard */,
